@@ -21,10 +21,13 @@
   </scm>
   <distributionManagement>
     <repository>
-      <id>release</id>
-      <name>Release Distribution Repository</name>
-      <url>https://example.com/nexus/repository</url>
+      <id>releases</id>
+      <url>http://localhost:8081/repository/maven-releases/</url>
     </repository>
+    <snapshotRepository>
+      <id>snapshots</id>
+      <url>http://localhost:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
   </distributionManagement>
   <properties>
     <project.scm.id>integration-project</project.scm.id>
